@@ -1,6 +1,9 @@
 """RSS feed generation entry point."""
 
 import html
+import re
+from datetime import UTC
+from datetime import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
 from typing import cast
@@ -15,6 +18,47 @@ if TYPE_CHECKING:
     from amd.models import PromotionItem
     from amd.models import PromotionsResponse
     from feed_generator import FeedItem
+
+
+def extract_last_build_date(rss_content: str) -> datetime | None:
+    """Extract lastBuildDate from existing RSS feed.
+
+    Args:
+        rss_content: RSS XML content as string
+
+    Returns:
+        Parsed datetime or None if not found/invalid
+    """
+    match = re.search(r"<lastBuildDate>([^<]+)</lastBuildDate>", rss_content)
+    if not match:
+        return None
+
+    try:
+        # Parse RFC 822 format: "Mon, 17 Nov 2025 10:37:41 +0000"
+        return datetime.strptime(match.group(1), "%a, %d %b %Y %H:%M:%S %z")
+    except ValueError:
+        logger.warning(f"Failed to parse lastBuildDate: {match.group(1)}")
+        return None
+
+
+def normalize_rss_content(content: str) -> str:
+    """Normalize RSS content for comparison by removing dynamic elements.
+
+    Removes lastBuildDate, keysAvailable counts, and normalizes line endings
+    since they change frequently but don't represent meaningful content changes.
+
+    Args:
+        content: RSS XML content
+
+    Returns:
+        Normalized content without dynamic elements
+    """
+    # Remove lastBuildDate
+    content = re.sub(r"<lastBuildDate>[^<]+</lastBuildDate>", "", content)
+    # Remove keysAvailable counts (e.g., "9514 keys Available:")
+    content = re.sub(r"\d+ keys Available:", "keys Available:", content)
+    # Normalize line endings (API returns \r\n, but file may have \n)
+    return content.replace("\r\n", "\n")
 
 
 def build_amd_promotion_description(item: FeedItem) -> str:
@@ -77,10 +121,29 @@ def main() -> None:
         channel_link="https://www.amdgaming.com/promotions",
         channel_description="Free game giveaways and promotions from AMD Gaming",
     )
-    rss_xml: str = generator.generate_feed(promotions, build_amd_promotion_description)
+
+    # Check for existing feed and detect changes
+    output_path: Path = Path("pages/amd_gaming_promotions.rss")
+
+    # Always generate with current timestamp
+    rss_xml: str = generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))
+
+    # Compare normalized content if existing feed exists
+    if output_path.exists():
+        existing_content: str = output_path.read_text(encoding="utf-8")
+        existing_last_build_date: datetime | None = extract_last_build_date(existing_content)
+        logger.debug(f"Found existing feed with lastBuildDate: {existing_last_build_date}")
+
+        existing_normalized: str = normalize_rss_content(existing_content)
+        new_normalized: str = normalize_rss_content(rss_xml)
+
+        if existing_normalized == new_normalized:
+            logger.info("No changes detected in feed content - skipping write")
+            return
+
+        logger.info("Changes detected in feed content - updating feed")
 
     # Save RSS feed
-    output_path: Path = Path("pages/amd_gaming_promotions.rss")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(rss_xml, encoding="utf-8")
 

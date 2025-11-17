@@ -103,12 +103,18 @@ class RSSFeedGenerator:
         self.channel_link: str = channel_link
         self.channel_description: str = channel_description
 
-    def generate_feed(self, feed_collection: FeedCollection, description_builder: Callable[[FeedItem], str]) -> str:
+    def generate_feed(
+        self,
+        feed_collection: FeedCollection,
+        description_builder: Callable[[FeedItem], str],
+        last_build_date: datetime | None = None,
+    ) -> str:
         """Generate RSS 2.0 XML feed from feed items.
 
         Args:
             feed_collection: Collection containing list of feed items
             description_builder: Callback function to build HTML description for each item
+            last_build_date: Optional existing lastBuildDate to preserve when content hasn't changed
 
         Returns:
             RSS 2.0 XML feed as a string
@@ -120,7 +126,8 @@ class RSSFeedGenerator:
         ET.SubElement(channel, "title").text = self.channel_title
         ET.SubElement(channel, "link").text = self.channel_link
         ET.SubElement(channel, "description").text = self.channel_description
-        ET.SubElement(channel, "lastBuildDate").text = self._format_rfc822_date(datetime.now(UTC))
+        build_date: datetime = last_build_date or datetime.now(UTC)
+        ET.SubElement(channel, "lastBuildDate").text = self._format_rfc822_date(build_date)
 
         # Add items
         for item in feed_collection.items:
