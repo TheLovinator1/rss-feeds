@@ -10,6 +10,7 @@ from typing import cast
 
 from loguru import logger
 
+from amd.csv_logger import append_keys_data_to_csv
 from amd.image_downloader import ImageDownloader
 from amd.scrapers import AMDGamingScraper
 from feed_generator import RSSFeedGenerator
@@ -110,6 +111,12 @@ def main() -> None:
     promotions: PromotionsResponse = scraper.fetch_promotions()
 
     logger.info(f"Processing {len(promotions.items)} promotions")
+
+    # Log keys availability to CSV for tracking
+    json_path: Path = Path("pages/data/amd_response.json")
+    csv_path: Path = Path("pages/data/amd_gaming_keys_available.csv")
+    append_keys_data_to_csv(json_path, csv_path)
+    logger.info("Logged keys availability to CSV")
 
     # Download images and update promotion items with local paths
     downloader: ImageDownloader = ImageDownloader()
