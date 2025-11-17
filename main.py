@@ -81,17 +81,26 @@ def build_amd_promotion_description(item: FeedItem) -> str:
 
     # Add image only if available
     if promo.local_image_path:
-        description_parts.append(f'<img src="{html.escape(promo.local_image_path)}" alt="{html.escape(promo.title)}"/><br/>')
+        html_img: str = f'<img src="{html.escape(promo.local_image_path)}" alt="{html.escape(promo.title)}" style="max-width: 100%; height: auto;"/><br/>'
+        description_parts.extend(html_img)
 
-    description_parts.extend([
+    # Main content
+    description_parts.extend((
         f"<p>{content}</p>",
-        f"<p><strong>Platform:</strong> {html.escape(promo.platform)}</p>",
-        f"<p><strong>Developer:</strong> {html.escape(promo.developer)}</p>",
-        f"<p><strong>{promo.keys_available} keys Available:</strong></p>",
-    ])
+        f"<p><strong>Platform:</strong> {html.escape(promo.platform)} | "
+        f"<strong>Developer:</strong> {html.escape(promo.developer)} | "
+        f"<strong>Keys:</strong> {promo.keys_available}</p>",
+    ))
+
+    # Action links section
+    links: list[str] = [f'<a href="https://www.amdgaming.com/promotions/{html.escape(promo.slug)}">Claim</a>']
 
     if promo.youtube_url:
-        description_parts.append(f'<p><a href="{html.escape(promo.youtube_url)}">Watch Trailer</a></p>')
+        links.append(f'<a href="{html.escape(promo.youtube_url)}">Trailer</a>')
+
+    links.append('<a href="https://www.amdgaming.com/promotions">Promotions</a>')
+
+    description_parts.append("<p>" + " • ".join(links) + "</p>")
 
     return "".join(description_parts)
 
