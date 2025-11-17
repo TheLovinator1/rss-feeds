@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "gameWebsiteUrl": "https://store.steampowered.com/app/2870350/Pipistrello_and_the_Cursed_Yoyo/",
+            "slug": "pipistrello-and-the-cursed-yoyo-giveaway",
+            "id": "958e48f5-811f-450e-a7ec-b42f9715a125",
+            "platform": "Steam",
+            "color": "#FFA600",
+            "content": "Are you ready for the first Yoyovania?! In this 2D top-down adventure you'll explore a sprawling urban landscape, reinterpreting your surroundings through your mastery of yoyo tricks. Navigate the city's many districts, fight rival crime bosses, and regain the influence of the Pipistrello family!\r\n\r\nGet your Pipistrello and the Cursed Yoyo game key now!",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251112/thumbnail-829a98fe-502f-4e74-8480-9d5c303d38f3.jpg",
+            "featured": true,
+            "redemptionInstructions": "\u003col\u003e\r\n\u003cli\u003eCopy your key from this page, or find it again in\u003ca href=\"https://www.amdgaming.com/rewards\"\u003e My Loot.\u003c/a\u003e\u003c/li\u003e\r\n\u003cli\u003e\u003ca href=\"steam://open/activateproduct\"\u003eOpen your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"\u003c/a\u003e\u003c/li\u003e\r\n\u003cli\u003eFollow the on-screen instructions and insert your key.\u003c/li\u003e\r\n\u003cli\u003eGGs and have fun!\u003c/li\u003e\r\n\u003c/ol\u003e",
+            "title": "Pipistrello and the Cursed Yoyo Giveaway",
+            "deleted": false,
+            "createdAt": 1762971214,
+            "youtubeUrl": "https://www.youtube.com/watch?v=nv782XOmuCI",
+            "updatedAt": 1762972422,
+            "tags": "action-adventure",
+            "status": "active",
+            "developer": "PM Studios, Inc.",
+            "maxKeysPerIp": 2,
+            "keysAvailable": 0
+        },
+        {
+            "title": "Call of Duty®: Black Ops 7 Giveaway - Double Level XP",
+            "youtubeUrl": "https://www.youtube.com/watch?v=8Ry41LBsSuQ",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251114/e8f93741-4eaa-4be9-abee-da69dc105815/thumbnail-3e22ee6f-3608-4b92-a464-628640fdc3f3.png",
+            "developer": "Activision",
+            "content": "In Call of Duty®: Black Ops 7, Treyarch and Raven Software are bringing players the most mind-bending Black Ops ever across an innovative Co-Op Campaign, an electrifying Multiplayer experience, and the legendary Round-Based Zombies mode.\r\n\r\nGrab your 15 minute double-level XP boost now to get ahead of your fellow combatants!",
+            "gameWebsiteUrl": "https://www.activisionblizzard.com/",
+            "platform": "Activision Account",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "tags": "first-person-shooter",
+            "slug": "cod-black-ops-7",
+            "redemptionInstructions": "\u003col\u003e\r\n\u003cli\u003eCopy your key from this page, or find it again in\u003ca href=\"https://www.amdgaming.com/rewards\"\u003e My Loot.\u003c/a\u003e\u003c/li\u003e\r\n\u003cli\u003eClick the link to head to \u003ca href=\"https://callofduty.com/redeem\"\u003e Call of Duty's Official Game Page\u003c/a\u003e\u003c/li\u003e\r\n\u003cli\u003eLog into your Activision account and follow the on-screen redemption instructions!\u003c/li\u003e\r\n\u003cli\u003eGL HF!\u003c/li\u003e\r\n\u003c/ol\u003e",
+            "featured": true,
+            "createdAt": 1763079089,
+            "deleted": false,
+            "id": "e8f93741-4eaa-4be9-abee-da69dc105815",
+            "updatedAt": 1763136160,
+            "status": "active",
+            "maxKeysPerIp": 2,
+            "color": "#E26E07",
+            "keysAvailable": 9514
+        }
+    ]
+}
