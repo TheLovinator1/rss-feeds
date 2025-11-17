@@ -44,8 +44,8 @@ def extract_last_build_date(rss_content: str) -> datetime | None:
 def normalize_rss_content(content: str) -> str:
     """Normalize RSS content for comparison by removing dynamic elements.
 
-    Removes lastBuildDate, keysAvailable counts, and normalizes line endings
-    since they change frequently but don't represent meaningful content changes.
+    Removes lastBuildDate and normalizes line endings since they change frequently
+    but don't represent meaningful content changes.
 
     Args:
         content: RSS XML content
@@ -55,8 +55,6 @@ def normalize_rss_content(content: str) -> str:
     """
     # Remove lastBuildDate
     content = re.sub(r"<lastBuildDate>[^<]+</lastBuildDate>", "", content)
-    # Remove keysAvailable counts (e.g., "9514 keys Available:")
-    content = re.sub(r"\d+ keys Available:", "keys Available:", content)
     # Normalize line endings (API returns \r\n, but file may have \n)
     return content.replace("\r\n", "\n")
 
@@ -87,9 +85,7 @@ def build_amd_promotion_description(item: FeedItem) -> str:
     # Main content
     description_parts.extend((
         f"<p>{content}</p>",
-        f"<p><strong>Platform:</strong> {html.escape(promo.platform)} | "
-        f"<strong>Developer:</strong> {html.escape(promo.developer)} | "
-        f"<strong>Keys:</strong> {promo.keys_available}</p>",
+        f"<p><strong>Platform:</strong> {html.escape(promo.platform)} | <strong>Developer:</strong> {html.escape(promo.developer)}</p>",
     ))
 
     # Action links section
