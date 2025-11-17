@@ -135,7 +135,13 @@ class RSSFeedGenerator:
 
         # Pretty print XML
         self._indent_xml(rss)
-        return ET.tostring(rss, encoding="unicode", method="xml")
+
+        # Add XML declaration and stylesheet processing instruction
+        xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
+        stylesheet_pi = '<?xml-stylesheet type="text/xsl" href="rss-style.xsl"?>\n'
+        rss_content = ET.tostring(rss, encoding="unicode", method="xml")
+
+        return xml_declaration + stylesheet_pi + rss_content
 
     def _add_item(self, channel: ET.Element, feed_item: FeedItem, description_builder: Callable[[FeedItem], str]) -> None:
         """Add a single feed item as an RSS item.

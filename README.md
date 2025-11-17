@@ -7,7 +7,7 @@ Automated RSS feed generation using GitHub Workflows. This repository runs sched
 - `amd/` — AMD Gaming-specific code and assets
   - `amd/models.py` — Pydantic models for AMD promotions
   - `amd/scrapers.py` — AMD Gaming scraper implementation
-  - `amd/amd_gaming_promotions.rss` — generated RSS feed output
+  - `pages/amd_gaming_promotions.xml` — generated RSS feed output
 - `feed_generator.py` — generic RSS 2.0 feed generator
 - `main.py` — entry point orchestrating scraping and feed generation
 
@@ -18,4 +18,4 @@ uv sync
 uv run python main.py
 ```
 
-The generated file will be written to `amd/amd_gaming_promotions.rss`.
+The generated file will be written to `pages/amd_gaming_promotions.xml`.

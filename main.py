@@ -123,7 +123,7 @@ def main() -> None:
     )
 
     # Check for existing feed and detect changes
-    output_path: Path = Path("pages/amd_gaming_promotions.rss")
+    output_path: Path = Path("pages/amd_gaming_promotions.xml")
 
     # Always generate with current timestamp
     rss_xml: str = generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))

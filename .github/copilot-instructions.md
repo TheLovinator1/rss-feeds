@@ -50,8 +50,8 @@ uv run main.py
 ```
 main.py              # Entry point - orchestrates scraping and feed generation
 feed_generator.py    # RSS 2.0 XML generation
-pages/               # Output directory for .rss feeds (GitHub Pages)
-  amd_gaming_promotions.rss  # Generated AMD Gaming promotions feed
+pages/               # Output directory for .xml feeds (GitHub Pages)
+  amd_gaming_promotions.xml  # Generated AMD Gaming promotions feed
 pyproject.toml       # Dependencies, Ruff config, project metadata
 README.md            # Project documentation
 .github/             # GitHub Workflows
