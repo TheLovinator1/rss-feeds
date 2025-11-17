@@ -37,9 +37,14 @@ jobs:
       - name: Run script
         run: uv run python main.py
 
-      - name: Run Pre-commit to format and lint code
-        uses: j178/prek-action@v1
       - uses: j178/prek-action@v1
+        continue-on-error: true
+        with:
+          extra-args: "--all-files"
+
+      - uses: j178/prek-action@v1
+        with:
+          extra-args: "--all-files"
 
       - name: Configure Git
         run: |
