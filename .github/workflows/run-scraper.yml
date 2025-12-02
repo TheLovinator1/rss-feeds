@@ -1,4 +1,4 @@
-name: Run Scraper
+name: Run Scraper and Deploy
 
 on:
   schedule:
@@ -18,10 +18,15 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  scrape:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -46,19 +51,47 @@ jobs:
         with:
           extra-args: "--all-files"
 
+      - name: Check for changes in pages directory
+        id: check_pages
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "pages_changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            if git diff --cached --name-only | grep -q '^pages/'; then
+              echo "pages_changed=true" >> $GITHUB_OUTPUT
+            else
+              echo "pages_changed=false" >> $GITHUB_OUTPUT
+            fi
+          fi
+
       - name: Configure Git
+        if: steps.check_pages.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
+        if: steps.check_pages.outputs.has_changes == 'true'
         run: |
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
           files=$(git diff --cached --name-only | paste -sd ", " -)
           git commit -m "Update files: ${files}"
           git pull --rebase origin master
           git push origin HEAD:master
+
+      - name: Configure Pages
+        if: steps.check_pages.outputs.pages_changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: steps.check_pages.outputs.pages_changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages
+
+      - name: Deploy to GitHub Pages
+        if: steps.check_pages.outputs.pages_changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

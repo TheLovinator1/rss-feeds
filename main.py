@@ -81,7 +81,7 @@ def build_amd_promotion_description(item: FeedItem) -> str:
     # Add image only if available
     if promo.local_image_path:
         html_img: str = f'<img src="{html.escape(promo.local_image_path)}" alt="{html.escape(promo.title)}" style="max-width: 100%; height: auto;"/><br/>'
-        description_parts.extend(html_img)
+        description_parts.append(html_img)
 
     # Main content
     description_parts.extend((
@@ -150,10 +150,9 @@ def main() -> None:
         new_normalized: str = normalize_rss_content(rss_xml)
 
         if existing_normalized == new_normalized:
-            logger.info("No changes detected in feed content - skipping write")
-            return
-
-        logger.info("Changes detected in feed content - updating feed")
+            logger.info("No content changes detected - refreshing lastBuildDate")
+        else:
+            logger.info("Changes detected in feed content - updating feed")
 
     # Save RSS feed
     output_path.parent.mkdir(parents=True, exist_ok=True)
