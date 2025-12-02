@@ -56,14 +56,14 @@ jobs:
         run: |
           git add -A
           if git diff --cached --quiet; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "pages_changed=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "pages_changed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
             if git diff --cached --name-only | grep -q '^pages/'; then
-              echo "pages_changed=true" >> $GITHUB_OUTPUT
+              echo "pages_changed=true" >> "$GITHUB_OUTPUT"
             else
-              echo "pages_changed=false" >> $GITHUB_OUTPUT
+              echo "pages_changed=false" >> "$GITHUB_OUTPUT"
             fi
           fi
 
