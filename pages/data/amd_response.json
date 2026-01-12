@@ -1,28 +1,6 @@
 {
     "items": [
         {
-            "color": "#E26E07",
-            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "In Call of Duty®: Black Ops 7, Treyarch and Raven Software are bringing players the most mind-bending Black Ops ever across an innovative Co-Op Campaign, an electrifying Multiplayer experience, and the legendary Round-Based Zombies mode.\r\n\r\nGrab your 15 minute double-level XP boost now to get ahead of your fellow combatants!",
-            "createdAt": 1763079089,
-            "deleted": false,
-            "developer": "Activision",
-            "featured": true,
-            "gameWebsiteUrl": "https://www.activisionblizzard.com/",
-            "id": "e8f93741-4eaa-4be9-abee-da69dc105815",
-            "keysAvailable": 0,
-            "maxKeysPerIp": 2,
-            "platform": "Activision Account",
-            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Click the link to head to <a href=\"https://callofduty.com/redeem\"> Call of Duty's Official Game Page</a></li>\r\n<li>Log into your Activision account and follow the on-screen redemption instructions!</li>\r\n<li>GL HF!</li>\r\n</ol>",
-            "slug": "cod-black-ops-7",
-            "status": "active",
-            "tags": "first-person-shooter",
-            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251114/e8f93741-4eaa-4be9-abee-da69dc105815/thumbnail-3e22ee6f-3608-4b92-a464-628640fdc3f3.png",
-            "title": "Call of Duty®: Black Ops 7 Giveaway - Double Level XP",
-            "updatedAt": 1763136160,
-            "youtubeUrl": "https://www.youtube.com/watch?v=8Ry41LBsSuQ"
-        },
-        {
             "color": "#91d081",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
             "content": "<h1>Vaultbreakers Playtest Giveaway!</h1>\r\n\r\nVaultbreakers is an upcoming top-down, high-stakes adventure ARPG. Engage in combat that rewards preparation, skill, and knowledge. Build up your Haven from rubble to fortress, learn your enemies, and tailor your playstyle on an epic journey in PvE or PvPvE. This Steam key gives you access to the upcoming Playtest on December 4th and all the following playtests until launch.",
@@ -95,7 +73,7 @@
             "createdAt": 1766095817,
             "deleted": false,
             "developer": "Wargaming",
-            "featured": true,
+            "featured": false,
             "gameWebsiteUrl": "https://wargaming.net/shop/redeem/",
             "id": "3b75d4a2-bc5c-40c8-849b-74c8f55ef3ba",
             "keysAvailable": 10917,
@@ -107,8 +85,30 @@
             "tags": "military sim",
             "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251218/thumbnail-d6d4ebb3-4d30-415b-9058-2c83f0deae7b.jpg",
             "title": "World of Tanks Holiday Ops Giveaway",
-            "updatedAt": 1766152803,
+            "updatedAt": 1768235919,
             "youtubeUrl": "https://www.youtube.com/watch?v=oY7ZVZrrbQE"
+        },
+        {
+            "color": "#E26E07",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "In Call of Duty®: Black Ops 7, Treyarch and Raven Software are bringing players the most mind-bending Black Ops ever across an innovative Co-Op Campaign, an electrifying Multiplayer experience, and the legendary Round-Based Zombies mode.\r\n\r\nGrab your 15 minute double-level XP boost now to get ahead of your fellow combatants!",
+            "createdAt": 1763079089,
+            "deleted": false,
+            "developer": "Activision",
+            "featured": true,
+            "gameWebsiteUrl": "https://www.activisionblizzard.com/",
+            "id": "e8f93741-4eaa-4be9-abee-da69dc105815",
+            "keysAvailable": 10000,
+            "maxKeysPerIp": 2,
+            "platform": "Activision Account",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Click the link to head to <a href=\"https://callofduty.com/redeem\"> Call of Duty's Official Game Page</a></li>\r\n<li>Log into your Activision account and follow the on-screen redemption instructions!</li>\r\n<li>GL HF!</li>\r\n</ol>",
+            "slug": "cod-black-ops-7",
+            "status": "active",
+            "tags": "first-person-shooter",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251114/e8f93741-4eaa-4be9-abee-da69dc105815/thumbnail-3e22ee6f-3608-4b92-a464-628640fdc3f3.png",
+            "title": "Call of Duty®: Black Ops 7 Giveaway - Double Level XP",
+            "updatedAt": 1768236030,
+            "youtubeUrl": "https://www.youtube.com/watch?v=8Ry41LBsSuQ"
         }
     ]
 }
