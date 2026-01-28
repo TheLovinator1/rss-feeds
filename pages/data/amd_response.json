@@ -111,7 +111,7 @@
             "youtubeUrl": "https://www.youtube.com/watch?v=8Ry41LBsSuQ"
         },
         {
-            "color": "#FFFFFF",
+            "color": "#50B4CB",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
             "content": "<h1>World of Warships</h1>\r\n<h1>Naval Supplies Giveaway!</h1>\r\n\r\nHeed the call of the seas and take the plunge into the naval arenas of World of Warships with a handy bundle of items that'll help turn the tide in your favor! \r\n\r\nUpon redeeming, all players get: \r\n<ul>\r\n<li><b>1 Polygonal Gray permanent camouflage</b></li>\r\n<li><b>2 uncommon economic bonuses of each type</b></li>\r\n<li><b>1 More Signals container</b></li>\r\n</ul>\r\n\r\nNew players will additionally get:\r\n<ul><li><b>German Tier II Premium cruiser Emden with a Port slot and 6-skill-point Commander</b></li>\r\n<li><b>7 days of Warships Premium Account</b></li>\r\n<li><b>300 Doubloons</b></li>\r\n<li><b>1,500,000 Credits</b></li>\r\n<li><b>8 uncommon economic bonuses of each type</b></li>\r\n<li><b>Mission: Fight 15 battles to receive on of four researchable Tier IV ships for free</b></li>\r\n</ul>",
             "createdAt": 1768234557,
@@ -120,7 +120,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://wargaming.net/en/games/wows",
             "id": "5e90ef0e-f112-463a-a263-8727f99d6677",
-            "keysAvailable": 6853,
+            "keysAvailable": 6847,
             "maxKeysPerIp": 2,
             "platform": "Wargaming Game Center",
             "redemptionInstructions": "<ol>\r\n<li>Copy your bonus code/key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://wo.ws/4iXQdHU\">Go to the Official World of Warships Website</a> and input your unique code in the provided field.</li>\r\n<li>Create or Log into your Wargaming.net account.</li>\r\n<li>Start up World of Warships through the WGC launcher to receive your goodies!</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -129,7 +129,7 @@
             "tags": "military sim",
             "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260112/thumbnail-dc3582f5-f8bb-4c7c-a478-5ec92839cd7c.jpg",
             "title": "World of Warships Naval Supplies Giveaway",
-            "updatedAt": 1768237365,
+            "updatedAt": 1769613970,
             "youtubeUrl": "https://youtu.be/BC4JQFQ7USA"
         }
     ]
