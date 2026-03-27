@@ -69,7 +69,7 @@ class ImageDownloader:
             }
 
             response: requests.Response = self.session.get(
-                image_url,
+                url=image_url,
                 headers=headers,
                 impersonate="firefox",
                 timeout=30,

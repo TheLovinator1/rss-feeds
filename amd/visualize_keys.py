@@ -11,19 +11,20 @@ Usage:
 import csv
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 
 def print_summary() -> None:
     """Print summary statistics of key availability."""
-    csv_path = Path(__file__).parent.parent / "pages" / "data" / "amd_gaming_keys_available.csv"
+    csv_path: Path = Path(__file__).parent.parent / "pages" / "data" / "amd_gaming_keys_available.csv"
 
     if not csv_path.exists():
         print(f"CSV file not found: {csv_path}")
         return
 
     with csv_path.open(encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        rows = list(reader)
+        reader: csv.DictReader[str] = csv.DictReader(f)
+        rows: list[dict[str | Any, str | Any]] = list(reader)
 
     if not rows:
         print("No data in CSV file")
@@ -33,21 +34,21 @@ def print_summary() -> None:
     print("=" * 80)
 
     # Group by promotion
-    promotions: dict[str, list[dict[str, str]]] = {}
+    promotions: dict[str, list[dict[str, Any]]] = {}
     for row in rows:
-        promo_id = row["promotion_id"]
+        promo_id: str = row["promotion_id"]
         if promo_id not in promotions:
             promotions[promo_id] = []
         promotions[promo_id].append(row)
 
     # Print stats for each promotion
     for records in promotions.values():
-        title = records[0]["title"]
-        slug = records[0]["slug"]
+        title: str = records[0]["title"]
+        slug: str = records[0]["slug"]
 
         # Get key availability over time
-        timestamps = [datetime.fromisoformat(r["timestamp"]) for r in records]
-        keys = [int(r["keys_available"]) for r in records]
+        timestamps: list[datetime] = [datetime.fromisoformat(r["timestamp"]) for r in records]
+        keys: list[int] = [int(r["keys_available"]) for r in records]
 
         print(f"\n🎮 {title}")
         print(f"   Slug: {slug}")
@@ -55,7 +56,7 @@ def print_summary() -> None:
         print(f"   Latest keys available: {keys[-1]:,}")
 
         if len(keys) > 1:
-            key_change = keys[-1] - keys[0]
+            key_change: int = keys[-1] - keys[0]
             print(f"   Change since first record: {key_change:+,}")
 
             # Show timeline if we have multiple records

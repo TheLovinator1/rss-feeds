@@ -30,7 +30,7 @@ def extract_last_build_date(rss_content: str) -> datetime | None:
     Returns:
         Parsed datetime or None if not found/invalid
     """
-    match = re.search(r"<lastBuildDate>([^<]+)</lastBuildDate>", rss_content)
+    match: re.Match[str] | None = re.search(r"<lastBuildDate>([^<]+)</lastBuildDate>", rss_content)
     if not match:
         return None
 
