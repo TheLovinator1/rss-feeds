@@ -103,7 +103,7 @@ def build_amd_promotion_description(item: FeedItem) -> str:
     return "".join(description_parts)
 
 
-def main() -> None:
+def main() -> None:  # noqa: PLR0914
     """Fetch promotions and generate RSS feeds, with restock detection for dev feed."""
     logger.info("Starting RSS feed generation (with restock detection)")
 
@@ -154,21 +154,31 @@ def main() -> None:
     except (OSError, TypeError) as e:
         logger.warning(f"Failed to save restock state: {e}")
 
-    # --- Feed generation ---
-    generator: RSSFeedGenerator = RSSFeedGenerator(
+    # --- Main feed generation (always) ---
+    main_generator: RSSFeedGenerator = RSSFeedGenerator(
+        channel_title="AMD Gaming Promotions",
+        channel_link="https://www.amdgaming.com/promotions",
+        channel_description="Free game giveaways and promotions from AMD Gaming",
+    )
+    main_output_path: Path = Path("pages/amd_gaming_promotions.xml")
+    main_rss_xml: str = main_generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))
+    main_output_path.parent.mkdir(parents=True, exist_ok=True)
+    main_output_path.write_text(main_rss_xml, encoding="utf-8")
+    logger.success(f"Main RSS feed generated: {main_output_path.absolute()}")
+
+    # --- Dev feed generation (on restock only) ---
+    dev_generator: RSSFeedGenerator = RSSFeedGenerator(
         channel_title="AMD Gaming Promotions (DEV)",
         channel_link="https://www.amdgaming.com/promotions",
         channel_description="[DEV FEED] Free game giveaways and promotions from AMD Gaming",
     )
-
     dev_output_path: Path = Path("pages/amd_gaming_promotions_dev.xml")
-    rss_xml: str = generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))
+    dev_rss_xml: str = dev_generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))
 
-    # Only write dev feed if any restock detected
     if restocked:
         logger.info(f"Restock detected for promotions: {restocked} - writing DEV feed")
         dev_output_path.parent.mkdir(parents=True, exist_ok=True)
-        dev_output_path.write_text(rss_xml, encoding="utf-8")
+        dev_output_path.write_text(dev_rss_xml, encoding="utf-8")
         logger.success(f"DEV RSS feed generated: {dev_output_path.absolute()}")
     else:
         logger.info("No restock detected - DEV feed not updated")
