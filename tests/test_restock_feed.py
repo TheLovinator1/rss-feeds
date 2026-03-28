@@ -92,7 +92,7 @@ def test_no_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
                         consumerId="c",
                         deleted=False,
                     ),
-                ]
+                ],
             )
 
     monkeypatch.setattr("main.AMDGamingScraper", DummyScraper)
@@ -162,7 +162,7 @@ def test_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
                         consumerId="c",
                         deleted=False,
                     ),
-                ]
+                ],
             )
 
     monkeypatch.setattr("main.AMDGamingScraper", DummyScraper)
