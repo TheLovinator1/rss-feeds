@@ -2,7 +2,7 @@ name: Run Scraper and Deploy
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # Every 15 minutes
+    - cron: "0,15,30,45 * * * *"
   workflow_dispatch:
   push:
     paths:
@@ -24,6 +24,7 @@ permissions:
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -40,7 +41,9 @@ jobs:
         run: uv sync --all-groups
 
       - name: Run script
-        run: uv run python main.py
+        run: |
+          sleep 15
+          uv run python main.py
 
       - uses: j178/prek-action@v1
         continue-on-error: true
