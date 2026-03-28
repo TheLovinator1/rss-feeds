@@ -8,7 +8,7 @@ from typing import LiteralString
 from curl_cffi import requests
 from loguru import logger
 
-from .models import PromotionsResponse
+from amd.models import PromotionsResponse
 
 
 class AMDGamingScraper:
@@ -85,3 +85,10 @@ class AMDGamingScraper:
 
         logger.info(f"Saved API response to {filename}")
         return filename
+
+
+if __name__ == "__main__":
+    scraper: AMDGamingScraper = AMDGamingScraper()
+    scraper.fetch_promotions(
+        save_response=False,
+    )

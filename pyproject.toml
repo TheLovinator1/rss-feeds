@@ -11,7 +11,9 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["pytest"]
+dev = [
+    "pytest",
+]
 
 [tool.ruff]
 preview = true

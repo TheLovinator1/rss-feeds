@@ -1,6 +1,7 @@
 """RSS feed generation entry point."""
 
 import html
+import json
 import re
 from datetime import UTC
 from datetime import datetime
@@ -103,8 +104,8 @@ def build_amd_promotion_description(item: FeedItem) -> str:
 
 
 def main() -> None:
-    """Fetch promotions and generate RSS feeds."""
-    logger.info("Starting RSS feed generation")
+    """Fetch promotions and generate RSS feeds, with restock detection for dev feed."""
+    logger.info("Starting RSS feed generation (with restock detection)")
 
     # Fetch promotions
     scraper: AMDGamingScraper = AMDGamingScraper()
@@ -127,38 +128,50 @@ def main() -> None:
             promotion.local_image_path = downloader.get_github_pages_url(local_path)
             logger.debug(f"Set local image path for {promotion.title}: {promotion.local_image_path}")
 
-    # Generate RSS feed
+    # --- Restock detection logic ---
+    restock_state_path: Path = Path("pages/data/amd_gaming_keys_restock_state.json")
+    restock_state: dict[str, dict[str, int]] = {"promotions": {}}
+    if restock_state_path.exists():
+        try:
+            with restock_state_path.open("r", encoding="utf-8") as f:
+                restock_state = json.load(f)
+        except (TypeError, OSError, json.JSONDecodeError) as e:
+            logger.warning(f"Failed to load restock state: {e}")
+
+    prev_keys: dict[str, int] = restock_state.get("promotions", {})
+    restocked: list[str] = []
+    new_keys: dict[str, int] = {}
+    for promo in promotions.items:
+        prev: int = prev_keys.get(promo.id, 0)
+        new_keys[promo.id] = promo.keys_available
+        if prev == 0 and promo.keys_available > 0:
+            restocked.append(promo.id)
+
+    # Save new state
+    try:
+        with restock_state_path.open("w", encoding="utf-8") as f:
+            json.dump({"promotions": new_keys}, f, indent=2)
+    except (OSError, TypeError) as e:
+        logger.warning(f"Failed to save restock state: {e}")
+
+    # --- Feed generation ---
     generator: RSSFeedGenerator = RSSFeedGenerator(
-        channel_title="AMD Gaming Promotions",
+        channel_title="AMD Gaming Promotions (DEV)",
         channel_link="https://www.amdgaming.com/promotions",
-        channel_description="Free game giveaways and promotions from AMD Gaming",
+        channel_description="[DEV FEED] Free game giveaways and promotions from AMD Gaming",
     )
 
-    # Check for existing feed and detect changes
-    output_path: Path = Path("pages/amd_gaming_promotions.xml")
-
-    # Always generate with current timestamp
+    dev_output_path: Path = Path("pages/amd_gaming_promotions_dev.xml")
     rss_xml: str = generator.generate_feed(promotions, build_amd_promotion_description, datetime.now(UTC))
 
-    # Compare normalized content if existing feed exists
-    if output_path.exists():
-        existing_content: str = output_path.read_text(encoding="utf-8")
-        existing_last_build_date: datetime | None = extract_last_build_date(existing_content)
-        logger.debug(f"Found existing feed with lastBuildDate: {existing_last_build_date}")
-
-        existing_normalized: str = normalize_rss_content(existing_content)
-        new_normalized: str = normalize_rss_content(rss_xml)
-
-        if existing_normalized == new_normalized:
-            logger.info("No content changes detected - refreshing lastBuildDate")
-        else:
-            logger.info("Changes detected in feed content - updating feed")
-
-    # Save RSS feed
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(rss_xml, encoding="utf-8")
-
-    logger.success(f"RSS feed generated: {output_path.absolute()}")
+    # Only write dev feed if any restock detected
+    if restocked:
+        logger.info(f"Restock detected for promotions: {restocked} - writing DEV feed")
+        dev_output_path.parent.mkdir(parents=True, exist_ok=True)
+        dev_output_path.write_text(rss_xml, encoding="utf-8")
+        logger.success(f"DEV RSS feed generated: {dev_output_path.absolute()}")
+    else:
+        logger.info("No restock detected - DEV feed not updated")
 
 
 if __name__ == "__main__":
