@@ -209,7 +209,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://wargaming.net/en/games/wows",
             "id": "2daf90c5-a96c-4621-8222-17050e47e375",
-            "keysAvailable": 7725,
+            "keysAvailable": 7724,
             "maxKeysPerIp": 2,
             "platform": "Wargaming Game Center",
             "redemptionInstructions": "<ol>\r\n<li>Copy your bonus code/key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://wo.ws/4iXQdHU\">Go to the Official World of Warships Website</a> and input your unique code in the provided field.</li>\r\n<li>Create or Log into your Wargaming.net account.</li>\r\n<li>Start up World of Warships through the WGC launcher to receive your goodies!</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -231,7 +231,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://stardive.netmarble.com/en/",
             "id": "29f5810b-72df-4e71-8cd4-b6cda3dd6c77",
-            "keysAvailable": 1346,
+            "keysAvailable": 1340,
             "maxKeysPerIp": 2,
             "platform": "PC, Mobile",
             "redemptionInstructions": "<ol>\r\n<li>Copy your code from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Head to the <a href=\"https://coupon.netmarble.com/monster2\">Mongil: Star Dive Redemption Page</a></li>\r\n<li>Follow the on-screen instructions and insert your code.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -242,6 +242,28 @@
             "title": "Mongil: Star Dive Giveaway",
             "updatedAt": 1779214904,
             "youtubeUrl": "https://www.youtube.com/watch?v=cppNSXsE1Q4"
+        },
+        {
+            "color": "#FFB7C5",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>House Flipper 2</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\nClean your worries away with this relaxing renovation simulator! Buy, fix, sell, and become a local legend. Or grab your power tools and build anything from scratch!\r\n\r\nDid you miss the sakura season in Japan? Now you can see flowers blossom all year round with the newest addition to the House Flipper 2 game! <a href=\"https://store.steampowered.com/app/4351410/House_Flipper_2__Sakura_DLC/\"> The Sakura DLC!</a>  \r\n\r\nInspired by Japanese culture and stunning sakura blossoms, the Sakura DLC offers a glimpse into the rich history of Japanese landscape architecture and interior design, including: \r\n<ul>\r\n<li><b>A new region to explore</b></li>\r\n<li><b>Five new jobs and houses to buy</b></li>\r\n<li><b>Spacious empty plots to build on</b></li>\r\n<li><b>Over 600 new items</b></li>\r\n</ul>\r\n\r\nTo celebrate this new addition, we're offering free House Flipper 2 keys on Steam. Make sure to grab yours today and feel invited to join us on our Japan trip!",
+            "createdAt": 1779295573,
+            "deleted": false,
+            "developer": "Frozen District",
+            "featured": true,
+            "gameWebsiteUrl": "https://houseflipper2.com/",
+            "id": "7607cee4-24fe-4752-8de4-b393cd851d01",
+            "keysAvailable": 0,
+            "maxKeysPerIp": 2,
+            "platform": "Steam",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
+            "slug": "house-flipper-2-giveaway",
+            "status": "active",
+            "tags": "simulation,cleaning,house",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260520/thumbnail-1b45dc15-00a2-4729-96bd-117cf285560e.jpg",
+            "title": "House Flipper 2 Giveaway",
+            "updatedAt": 1779379056,
+            "youtubeUrl": "https://www.youtube.com/watch?v=QYcsGJ-KJZs"
         }
     ]
 }
