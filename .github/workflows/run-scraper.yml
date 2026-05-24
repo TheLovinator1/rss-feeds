@@ -45,12 +45,12 @@ jobs:
           sleep 15
           uv run python main.py
 
-      - uses: j178/prek-action@v1
+      - uses: j178/prek-action@v2
         continue-on-error: true
         with:
           extra-args: "--all-files"
 
-      - uses: j178/prek-action@v1
+      - uses: j178/prek-action@v2
         with:
           extra-args: "--all-files"
 
