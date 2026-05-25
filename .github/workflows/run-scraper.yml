@@ -90,7 +90,7 @@ jobs:
 
       - name: Upload Pages artifact
         if: steps.check_pages.outputs.pages_changed == 'true'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: pages
 
