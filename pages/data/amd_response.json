@@ -209,7 +209,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://wargaming.net/en/games/wows",
             "id": "2daf90c5-a96c-4621-8222-17050e47e375",
-            "keysAvailable": 7493,
+            "keysAvailable": 7486,
             "maxKeysPerIp": 2,
             "platform": "Wargaming Game Center",
             "redemptionInstructions": "<ol>\r\n<li>Copy your bonus code/key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://wo.ws/4iXQdHU\">Go to the Official World of Warships Website</a> and input your unique code in the provided field.</li>\r\n<li>Create or Log into your Wargaming.net account.</li>\r\n<li>Start up World of Warships through the WGC launcher to receive your goodies!</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -231,7 +231,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://stardive.netmarble.com/en/",
             "id": "29f5810b-72df-4e71-8cd4-b6cda3dd6c77",
-            "keysAvailable": 738,
+            "keysAvailable": 727,
             "maxKeysPerIp": 2,
             "platform": "PC, Mobile",
             "redemptionInstructions": "<ol>\r\n<li>Copy your code from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Head to the <a href=\"https://coupon.netmarble.com/monster2\">Mongil: Star Dive Redemption Page</a></li>\r\n<li>Follow the on-screen instructions and insert your code.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -264,6 +264,28 @@
             "title": "House Flipper 2 Giveaway",
             "updatedAt": 1779458911,
             "youtubeUrl": "https://www.youtube.com/watch?v=QYcsGJ-KJZs"
+        },
+        {
+            "color": "#B1BB96",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>World of Tanks: HEAT</h1>\r\n<h2>AMD Bonus Pack Giveaway</h2>\r\n\r\nLike shadows interspersed with flashes of color, this dual Agent and Vehicle Skin for Kent and his XM1 90 evokes the thrill of the hunt. With an additional 50,000 Credits and 100 Tech on top, grab yours today and get ready to jump into battle!\r\n\r\nThe <b>AMD Bonus Pack</b> includes:\r\n<ul>\r\n<li><b>Agent Skin (Kent): Phantom Protocol</b></li>\r\n<li><b>Vehicle Skin (XM1 90): Flashpoint</b></li>\r\n<li><b>50,000 Credits</b></li>\r\n<li><b>100 Tech</b></li>\r\n</ul>",
+            "createdAt": 1779810048,
+            "deleted": false,
+            "developer": "Wargaming",
+            "featured": true,
+            "gameWebsiteUrl": "https://wotheat.com/",
+            "id": "3036559b-1072-495d-b0e3-8f58eb5e95e7",
+            "keysAvailable": 9824,
+            "maxKeysPerIp": 2,
+            "platform": "Steam",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Open a web browser and go to the <a href=\"https://wargaming.net/shop/redeem/\">Wargaming Redemption Page</a></li>\r\n<li>Enter your bonus code in the provided field and click <b>Redeem</b>.</li>\r\n<li>The reward will be credited to your account automatically!</li>\r\n<li>GGs and happy gaming!</li>\r\n</ol>",
+            "slug": "world-of-tanks-heat-giveaway",
+            "status": "active",
+            "tags": "military sim,hero shooter,tanks",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260526/thumbnail-144a3b69-c4a8-464e-90e4-47fa358c6bf9.jpg",
+            "title": "World of Tanks: Heat Giveaway",
+            "updatedAt": 1779810471,
+            "youtubeUrl": "https://www.youtube.com/watch?v=XUc5GNpvDKY"
         }
     ]
 }
