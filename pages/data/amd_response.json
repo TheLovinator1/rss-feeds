@@ -231,7 +231,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://stardive.netmarble.com/en/",
             "id": "29f5810b-72df-4e71-8cd4-b6cda3dd6c77",
-            "keysAvailable": 757,
+            "keysAvailable": 753,
             "maxKeysPerIp": 2,
             "platform": "PC, Mobile",
             "redemptionInstructions": "<ol>\r\n<li>Copy your code from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Head to the <a href=\"https://coupon.netmarble.com/monster2\">Mongil: Star Dive Redemption Page</a></li>\r\n<li>Follow the on-screen instructions and insert your code.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -289,29 +289,6 @@
             "youtubeUrl": "https://www.youtube.com/watch?v=GLFhyDuGYiQ"
         },
         {
-            "color": "#df63c3",
-            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "<h1>Arcade Spirits</h1>\r\n<h2> Game Key Giveaway</h2>\r\n\r\n***Arcade Spirits*** is a heartwarming visual novel set in an alternate timeline where the arcade scene never faded away. Step into your new job at the Funplex, meet an unforgettable cast of gamers and creators, shape your own personality through meaningful choices, and discover friendships—or romance—along the way.\r\n\r\n<ul>\r\n<li>Experience a world where arcades still reign supreme!</li>\r\n<li>Build friendships or pursue romance with a diverse cast of characters!</li>\r\n<li>Customize your character with extensive appearance and pronoun options!</li>\r\n<li>Shape your story through meaningful dialogue and personality choices!</li>\r\n<li>Discover multiple story paths and endings with every playthrough!</li>\r\n</ul>\r\n\r\n**Will you find your high score... or your player two? 🎮❤️**",
-            "createdAt": 1782918908,
-            "deleted": false,
-            "developer": "PQube",
-            "featured": true,
-            "gameWebsiteUrl": "https://pqube.co.uk/",
-            "id": "20f6096b-4434-43b5-ace2-5039feecca7c",
-            "keysAvailable": 0,
-            "maxKeysPerIp": 2,
-            "platform": "Steam",
-            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
-            "requireConnectedAccount": true,
-            "slug": "arcade-spirits-giveaway",
-            "status": "active",
-            "tags": "cute,dating sim,LGBQ+,visual novel",
-            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260701/thumbnail-d136baca-07f7-45ef-8bc4-c51d6db83624.jpg",
-            "title": "Arcade Spirits Giveaway",
-            "updatedAt": 1782921608,
-            "youtubeUrl": "https://youtu.be/30CSMAP-w5g?si=hGlQJotjDwu8TjrN"
-        },
-        {
             "color": "#B1BB96",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
             "content": "<h1>World of Tanks: HEAT</h1>\r\n<h2>AMD Bonus Pack Giveaway</h2>\r\n\r\nLike shadows interspersed with flashes of color, this dual Agent and Vehicle Skin for Kent and his XM1 90 evokes the thrill of the hunt. With an additional 50,000 Credits and 100 Tech on top, grab yours today and get ready to jump into battle!\r\n\r\nThe <b>AMD Bonus Pack</b> includes:\r\n<ul>\r\n<li><b>Agent Skin (Kent): Phantom Protocol</b></li>\r\n<li><b>Vehicle Skin (XM1 90): Flashpoint</b></li>\r\n<li><b>50,000 Credits</b></li>\r\n<li><b>100 Tech</b></li>\r\n</ul>",
@@ -333,6 +310,29 @@
             "title": "World of Tanks: Heat Giveaway",
             "updatedAt": 1782927753,
             "youtubeUrl": "https://www.youtube.com/watch?v=XUc5GNpvDKY"
+        },
+        {
+            "color": "#df63c3",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>Arcade Spirits</h1>\r\n<h2> Game Key Giveaway</h2>\r\n\r\n***Arcade Spirits*** is a heartwarming visual novel set in an alternate timeline where the arcade scene never faded away. Step into your new job at the Funplex, meet an unforgettable cast of gamers and creators, shape your own personality through meaningful choices, and discover friendships—or romance—along the way.\r\n\r\n<ul>\r\n<li>Experience a world where arcades still reign supreme!</li>\r\n<li>Build friendships or pursue romance with a diverse cast of characters!</li>\r\n<li>Customize your character with extensive appearance and pronoun options!</li>\r\n<li>Shape your story through meaningful dialogue and personality choices!</li>\r\n<li>Discover multiple story paths and endings with every playthrough!</li>\r\n</ul>\r\n\r\n**Will you find your high score... or your player two? 🎮❤️**",
+            "createdAt": 1782918908,
+            "deleted": false,
+            "developer": "PQube",
+            "featured": false,
+            "gameWebsiteUrl": "https://pqube.co.uk/",
+            "id": "20f6096b-4434-43b5-ace2-5039feecca7c",
+            "keysAvailable": 0,
+            "maxKeysPerIp": 2,
+            "platform": "Steam",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
+            "requireConnectedAccount": true,
+            "slug": "arcade-spirits-giveaway",
+            "status": "active",
+            "tags": "cute,dating sim,LGBQ+,visual novel",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260701/thumbnail-d136baca-07f7-45ef-8bc4-c51d6db83624.jpg",
+            "title": "Arcade Spirits Giveaway",
+            "updatedAt": 1783351288,
+            "youtubeUrl": "https://youtu.be/30CSMAP-w5g?si=hGlQJotjDwu8TjrN"
         }
     ]
 }
