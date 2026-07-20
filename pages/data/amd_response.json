@@ -322,7 +322,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://playgoals.com/en",
             "id": "42ad924d-9743-4978-b034-d87ad0ddfc05",
-            "keysAvailable": 7244,
+            "keysAvailable": 7243,
             "maxKeysPerIp": 2,
             "platform": "Steam",
             "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://playgoals.com/\">Head to PlayGoals.com to create your account and sign in.</a></li>\r\n<li>After creating and linking your preferred platform, head to your Account Settings on PlayGoals.com and click \"Redeem Code\" on the left side.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -345,7 +345,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://stardive.netmarble.com/en/",
             "id": "29f5810b-72df-4e71-8cd4-b6cda3dd6c77",
-            "keysAvailable": 0,
+            "keysAvailable": 2487,
             "maxKeysPerIp": 2,
             "platform": "PC, Mobile",
             "redemptionInstructions": "<ol>\r\n<li>Copy your code from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Head to the <a href=\"https://coupon.netmarble.com/monster2\">Mongil: Star Dive Redemption Page</a></li>\r\n<li>Follow the on-screen instructions and insert your code.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -384,7 +384,7 @@
         {
             "color": "#7bd280",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "<h1>Starsand Island</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\n<h1>Starsand Island</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\n⭐ Tired of the city grind? Escape to Starsand Island and embrace the simple joys of country life! Live alongside capybaras, cats, and dogs, reel in a big catch, and explore the enchanting Moonlit Forest. Leave the hustle behind and experience the charm of this seaside paradise.\r\n\r\n<ul>\r\n  <li>Create your dream island home with deep building and customization tools</li>\r\n  <li>Farm, fish, craft, and care for adorable animals at your own pace</li>\r\n  <li>Explore forests, caves, and nearby islands filled with secrets to uncover</li>\r\n  <li>Build friendships and romance with a memorable cast of island residents</li>\r\n</ul>\r\n\r\n*Your next great adventure begins where the waves meet the shore. 🌴*",
+            "content": "<h1>Starsand Island</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\n⭐ Tired of the city grind? Escape to Starsand Island and embrace the simple joys of country life! Live alongside capybaras, cats, and dogs, reel in a big catch, and explore the enchanting Moonlit Forest. Leave the hustle behind and experience the charm of this seaside paradise.\r\n\r\n<ul>\r\n  <li>Create your dream island home with deep building and customization tools</li>\r\n  <li>Farm, fish, craft, and care for adorable animals at your own pace</li>\r\n  <li>Explore forests, caves, and nearby islands filled with secrets to uncover</li>\r\n  <li>Build friendships and romance with a memorable cast of island residents</li>\r\n</ul>\r\n\r\n*Your next great adventure begins where the waves meet the shore. 🌴*",
             "createdAt": 1784561985,
             "deleted": false,
             "developer": "Seed Sparkle Lab",
@@ -402,7 +402,7 @@
             "tags": "co-op,funny,puzzle,adventure,physics",
             "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260720/thumbnail-c033efc8-0a81-4d9c-ace3-5442ba467730.jpg",
             "title": "Starsand Island Giveaway",
-            "updatedAt": 1784562931,
+            "updatedAt": 1784580697,
             "youtubeUrl": "https://www.youtube.com/watch?v=dVczi9ZFTwY"
         }
     ]
