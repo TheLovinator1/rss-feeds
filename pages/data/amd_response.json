@@ -1,4 +1,10 @@
 {
+    "cursor": {
+        "gsi4_pk": "GIVEAWAY_STATUS#active",
+        "gsi4_sk": "DELETED#false#UPDATED_AT#1786567123#ID#2daf90c5-a96c-4621-8222-17050e47e375",
+        "pk": "2daf90c5-a96c-4621-8222-17050e47e375",
+        "sk": "GIVEAWAY"
+    },
     "items": [
         {
             "color": "#DF6CA6",
