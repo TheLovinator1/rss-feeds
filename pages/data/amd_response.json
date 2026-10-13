@@ -1,11 +1,34 @@
 {
     "cursor": {
         "gsi4_pk": "GIVEAWAY_STATUS#active",
-        "gsi4_sk": "DELETED#false#UPDATED_AT#1774890123#ID#2d7e9166-c624-49bb-a136-1465726c1f28",
-        "pk": "2d7e9166-c624-49bb-a136-1465726c1f28",
+        "gsi4_sk": "DELETED#false#UPDATED_AT#1775058781#ID#5e90ef0e-f112-463a-a263-8727f99d6677",
+        "pk": "5e90ef0e-f112-463a-a263-8727f99d6677",
         "sk": "GIVEAWAY"
     },
     "items": [
+        {
+            "color": "#55b1e0",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>Nutmeg! Football Manager</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\nNUTMEG! A Nostalgic Deckbuilding Football Manager puts a card-battling twist on classic football management, sending you back to the hard tackles, questionable haircuts, and unmistakable atmosphere of the '80s and '90s. Take charge of your club across a 20-year career, build your deck, refine your tactics, and manage everything from transfers and youth talent to finances and backroom staff as you fight your way through the English football Divisions.\r\n\r\n<ul>\r\n  <li>Build and upgrade a powerful deck to take on opponents in fast-paced football card battles</li>\r\n  <li>Choose formations, develop tactics, and train your squad to match your preferred style of play</li>\r\n  <li>Scout talent, manage transfers, develop youth players, and handle the business of running your club</li>\r\n  <li>Experience a nostalgic 20-year journey inspired by English football throughout the 1980s and 1990s</li>\r\n</ul>\r\n\r\n*Build your deck, back your tactics, and prove you've got what it takes to be the gaffer. ⚽*",
+            "createdAt": 1791904981,
+            "deleted": false,
+            "developer": "Secret Mode",
+            "featured": true,
+            "gameWebsiteUrl": "https://secret-mode-nutmeg.xsolla.site/",
+            "id": "ada9f590-3a55-449a-8907-32b2c2a7e938",
+            "keysAvailable": 0,
+            "maxKeysPerIp": 2,
+            "platform": "Steam",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
+            "requireConnectedAccount": true,
+            "slug": "nutmeg-game-key-giveaway",
+            "status": "active",
+            "tags": "simulation,deckbuilding,soccer,sports",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20261013/thumbnail-8f6c011e-676a-4390-a5e7-02b6d4d8eb66.jpg",
+            "title": "Nutmeg! Game Key Giveaway",
+            "updatedAt": 1791906760,
+            "youtubeUrl": "https://www.youtube.com/watch?v=bn1Izybzfx8"
+        },
         {
             "color": "#5A9BB1",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
@@ -293,7 +316,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://playgoals.com/en",
             "id": "42ad924d-9743-4978-b034-d87ad0ddfc05",
-            "keysAvailable": 5941,
+            "keysAvailable": 5919,
             "maxKeysPerIp": 2,
             "platform": "Steam",
             "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://playgoals.com/\">Head to PlayGoals.com to create your account and sign in.</a></li>\r\n<li>After creating and linking your preferred platform, head to your Account Settings on PlayGoals.com and click \"Redeem Code\" on the left side.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -440,29 +463,6 @@
             "title": "World of Warships Naval Supplies Giveaway",
             "updatedAt": 1775058781,
             "youtubeUrl": "https://youtu.be/BC4JQFQ7USA"
-        },
-        {
-            "color": "#91d081",
-            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "<h1>Vaultbreakers Playtest Giveaway!</h1>\r\n\r\n<h2> Join the latest playtest NOW! Don't miss the action starting 2/11 - 2/16 (11:59PM CET)!</h2> \r\n\r\nVaultbreakers is an upcoming top-down, high-stakes adventure ARPG. Engage in combat that rewards preparation, skill, and knowledge. Build up your Haven from rubble to fortress, learn your enemies, and tailor your playstyle on an epic journey in PvE or PvPvE. This Steam key gives you access to the upcoming Playtest on December 4th and all the following playtests until launch.",
-            "createdAt": 1764195146,
-            "deleted": false,
-            "developer": "Betadwarf",
-            "featured": false,
-            "gameWebsiteUrl": "https://store.steampowered.com/app/306910/Vaultbreakers/",
-            "headerImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260211/2d7e9166-c624-49bb-a136-1465726c1f28/header-cfc0ba96-7a04-4f7c-9176-421c05ce822e.jpg",
-            "id": "2d7e9166-c624-49bb-a136-1465726c1f28",
-            "keysAvailable": 0,
-            "maxKeysPerIp": 2,
-            "platform": "Steam",
-            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
-            "slug": "vaultbreakers-playtest-key-giveaway",
-            "status": "active",
-            "tags": "top-down ARPG",
-            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20251126/thumbnail-5f5afc0e-761b-4744-81a5-0e8003b37d4c.jpg",
-            "title": "Vaultbreakers Playtest Key Giveaway",
-            "updatedAt": 1774890123,
-            "youtubeUrl": "https://www.youtube.com/watch?v=ZzP79NRjw1I"
         }
     ]
 }
