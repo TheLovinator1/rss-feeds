@@ -1,11 +1,67 @@
 {
     "cursor": {
         "gsi4_pk": "GIVEAWAY_STATUS#active",
-        "gsi4_sk": "DELETED#false#UPDATED_AT#1782927753#ID#3036559b-1072-495d-b0e3-8f58eb5e95e7",
-        "pk": "3036559b-1072-495d-b0e3-8f58eb5e95e7",
+        "gsi4_sk": "DELETED#false#UPDATED_AT#1783351288#ID#20f6096b-4434-43b5-ace2-5039feecca7c",
+        "pk": "20f6096b-4434-43b5-ace2-5039feecca7c",
         "sk": "GIVEAWAY"
     },
     "items": [
+        {
+            "color": "#f7bd3d",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>Parkasaurus</h1>\r\n<h2>Game Key Giveaway</h2>\r\n\r\nGet ready to build the ultimate dinosaur theme park with **Parkasaurus**, the colorful dinosaur management simulator from Washbear Studio! Design unique habitats, hatch and raise prehistoric creatures, and keep your guests entertained as you grow your very own dinosaur-filled attraction.\r\n\r\n<ul>\r\n  <li>Design and customize dinosaur exhibits with unique habitats and ecosystems</li>\r\n  <li>Hatch, raise, and care for a variety of adorable prehistoric creatures</li>\r\n  <li>Manage park operations, research new technologies, and keep visitors happy</li>\r\n  <li>Expand your dinosaur park with creative building and management tools</li>\r\n</ul>\r\n\r\n**From Dinosaurs to Railways! 🚂**\r\n\r\nThe creative minds at **Washbear Studio** are cooking up their next adventure with **Railborn**, an upcoming survival game where you build, expand, and live aboard your very own train. Explore a mysterious world, gather resources, and turn your locomotive into a home on the move. Check out the [official trailer](https://youtu.be/eGWsHbi85K8) and [wishlist Railborn on Steam](https://store.steampowered.com/app/2340970/Railborn/) to follow what's coming down the tracks!\r\n\r\n------------\r\n\r\nDon't have enough stats to unlock this giveaway? Head to the [Missions Board](https://www.amdgaming.com/missions) and complete missions to gain Intellect and Charisma!",
+            "createdAt": 1794416264,
+            "deleted": false,
+            "developer": "Washbear Studio",
+            "featured": true,
+            "gameWebsiteUrl": "https://washbearstudio.com/parkasaurus/",
+            "id": "1b94beef-5f79-45eb-ac57-3dfddd1762d9",
+            "keysAvailable": 0,
+            "maxKeysPerIp": 2,
+            "platform": "Steam",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"steam://open/activateproduct\">Open your Steam client, click \"Games\" in the top menu and choose  \"Activate a Product on Steam…\"</a></li>\r\n<li>Follow the on-screen instructions and insert your key.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
+            "requireConnectedAccount": true,
+            "slug": "parkasaurus",
+            "statRequirements": [
+                {
+                    "minPoints": 6,
+                    "statId": "INT"
+                },
+                {
+                    "minPoints": 6,
+                    "statId": "CHR"
+                }
+            ],
+            "status": "active",
+            "tags": "dinosaurs,management,simulator,theme park,building",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20261111/thumbnail-62dce4ca-0d0f-427c-b0b1-4137d9851e60.jpg",
+            "title": "Parkasaurus Game Key Giveaway",
+            "updatedAt": 1794423579,
+            "youtubeUrl": "https://www.youtube.com/watch?v=1XhTG69PfE4"
+        },
+        {
+            "color": "#e5d2c1",
+            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
+            "content": "<h1>World of Tanks</h1>\r\n<h2>Bonus Code Key Giveaway</h2>\r\n\r\nTake command of the Chrysler MTC 2TC for 7 days and roll out with WoT Premium Account and useful consumables!\r\n\r\nClaim your bonus code and head into battle with a powerful Tier VIII Premium medium tank rental. Your package also includes 7 days of WoT Premium Account, plus Large Repair Kits and Large First Aid Kits to keep you in the fight.\r\n\r\nYour bonus code will unlock:\r\n<ul>\r\n<li>Chrysler MTC 2TC — Tier VIII Premium medium tank</li>\r\n          <ul>\r\n               <li>7-Day Rental</li>\r\n               <li>Garage slot and crew included</li>\r\n          </ul>\r\n<li>5 Large Repair Kits</li>\r\n<li>5 Large First Aid Kits</li>\r\n<li>7 Days of WoT Premium Account</li>\r\n</ul>\r\n\r\n<small>The offer and bonus code redemption are available until **September 1, 2028**, at 23:59:59 UTC, **or until all bonus codes/keys have been claimed, whichever occurs first.** Individuals in China are not eligible to participate in this giveaway. Bonus codes are single-use and limited to one per game account.</small>",
+            "createdAt": 1792076830,
+            "deleted": false,
+            "developer": "Wargaming",
+            "featured": false,
+            "gameWebsiteUrl": "https://worldoftanks.eu/",
+            "id": "47dc5299-f57c-464a-9a47-6b18310d5d54",
+            "keysAvailable": 0,
+            "maxKeysPerIp": 2,
+            "platform": "Wargaming",
+            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in My Loot.</li>\r\n<li>Go to <a href=\"https://worldoftanks.eu/\">the official World of Tanks website</a> and log in to your existing account.</li>\r\n<li>Click your username in the upper-right corner of the screen and select “Activate Wargaming Code” from the dropdown menu.</li>\r\n<li>In the window that opens, enter your code in the designated field and click “Redeem Code”.</li>\r\n<li>Allow some time for your code to be processed. Your rewards should appear the next time you log in to World of Tanks.</li>\r\n<li>For more information, visit the <a href=\"https://wargaming.net/support/en/products/wot/article/10238/\">World of Tanks redemption guide.</a></li>\r\n<li>Good luck and Roll out!</li>",
+            "requireConnectedAccount": false,
+            "slug": "world-of-tanks",
+            "status": "active",
+            "tags": "tanks,vehicular combat,pvp,multiplayer,tactical",
+            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20261015/thumbnail-6fbf4720-1a86-457e-8811-277f5896b6c5.jpg",
+            "title": "World of Tanks Bonus Code Key Giveaway",
+            "updatedAt": 1794412424,
+            "youtubeUrl": "https://www.youtube.com/watch?v=tGV4ljhCsWo"
+        },
         {
             "color": "#ffab25",
             "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
@@ -62,7 +118,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://wargaming.net/en/games/wows",
             "id": "93dbf8c8-d73f-495e-9b1e-b702791fe8ae",
-            "keysAvailable": 7180,
+            "keysAvailable": 7142,
             "maxKeysPerIp": 2,
             "platform": "Wargaming Game Center",
             "redemptionInstructions": "<ol>\r\n<li>Copy your bonus code/key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://wo.ws/47zMMSV\">Go to the Official World of Warships Website</a> and input your unique code in the provided field.</li>\r\n<li>Create or Log into your Wargaming.net account.</li>\r\n<li>Start up World of Warships through the WGC launcher to receive your goodies!</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -97,29 +153,6 @@
             "title": "A Storied Life: Tabitha Game Key Giveaway",
             "updatedAt": 1792424288,
             "youtubeUrl": "https://www.youtube.com/watch?v=BRrC2xkpBZU"
-        },
-        {
-            "color": "#e5d2c1",
-            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "<h1>World of Tanks</h1>\r\n<h2>Bonus Code Key Giveaway</h2>\r\n\r\nTake command of the Chrysler MTC 2TC for 7 days and roll out with WoT Premium Account and useful consumables!\r\n\r\nClaim your bonus code and head into battle with a powerful Tier VIII Premium medium tank rental. Your package also includes 7 days of WoT Premium Account, plus Large Repair Kits and Large First Aid Kits to keep you in the fight.\r\n\r\nYour bonus code will unlock:\r\n<ul>\r\n<li>Chrysler MTC 2TC — Tier VIII Premium medium tank</li>\r\n          <ul>\r\n               <li>7-Day Rental</li>\r\n               <li>Garage slot and crew included</li>\r\n          </ul>\r\n<li>5 Large Repair Kits</li>\r\n<li>5 Large First Aid Kits</li>\r\n<li>7 Days of WoT Premium Account</li>\r\n</ul>\r\n\r\n<small>The offer and bonus code redemption are available until **September 1, 2028**, at 23:59:59 UTC, **or until all bonus codes/keys have been claimed, whichever occurs first.** Individuals in China are not eligible to participate in this giveaway. Bonus codes are single-use and limited to one per game account.</small>",
-            "createdAt": 1792076830,
-            "deleted": false,
-            "developer": "Wargaming",
-            "featured": true,
-            "gameWebsiteUrl": "https://worldoftanks.eu/",
-            "id": "47dc5299-f57c-464a-9a47-6b18310d5d54",
-            "keysAvailable": 0,
-            "maxKeysPerIp": 2,
-            "platform": "Wargaming",
-            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in My Loot.</li>\r\n<li>Go to <a href=\"https://worldoftanks.eu/\">the official World of Tanks website</a> and log in to your existing account.</li>\r\n<li>Click your username in the upper-right corner of the screen and select “Activate Wargaming Code” from the dropdown menu.</li>\r\n<li>In the window that opens, enter your code in the designated field and click “Redeem Code”.</li>\r\n<li>Allow some time for your code to be processed. Your rewards should appear the next time you log in to World of Tanks.</li>\r\n<li>For more information, visit the <a href=\"https://wargaming.net/support/en/products/wot/article/10238/\">World of Tanks redemption guide.</a></li>\r\n<li>Good luck and Roll out!</li>",
-            "requireConnectedAccount": false,
-            "slug": "world-of-tanks",
-            "status": "active",
-            "tags": "tanks,vehicular combat,pvp,multiplayer,tactical",
-            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20261015/thumbnail-6fbf4720-1a86-457e-8811-277f5896b6c5.jpg",
-            "title": "World of Tanks Bonus Code Key Giveaway",
-            "updatedAt": 1792158610,
-            "youtubeUrl": "https://www.youtube.com/watch?v=tGV4ljhCsWo"
         },
         {
             "color": "#55b1e0",
@@ -408,7 +441,7 @@
             "featured": true,
             "gameWebsiteUrl": "https://playgoals.com/en",
             "id": "42ad924d-9743-4978-b034-d87ad0ddfc05",
-            "keysAvailable": 4433,
+            "keysAvailable": 4411,
             "maxKeysPerIp": 2,
             "platform": "Steam",
             "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li><a href=\"https://playgoals.com/\">Head to PlayGoals.com to create your account and sign in.</a></li>\r\n<li>After creating and linking your preferred platform, head to your Account Settings on PlayGoals.com and click \"Redeem Code\" on the left side.</li>\r\n<li>GGs and have fun!</li>\r\n</ol>",
@@ -443,29 +476,6 @@
             "title": "Arcade Spirits Giveaway",
             "updatedAt": 1783351288,
             "youtubeUrl": "https://youtu.be/30CSMAP-w5g?si=hGlQJotjDwu8TjrN"
-        },
-        {
-            "color": "#B1BB96",
-            "consumerId": "00418eb5-78ae-4cd6-b146-735bad4a0ef9",
-            "content": "<h1>World of Tanks: HEAT</h1>\r\n<h2>AMD Bonus Pack Giveaway</h2>\r\n\r\nLike shadows interspersed with flashes of color, this dual Agent and Vehicle Skin for Kent and his XM1 90 evokes the thrill of the hunt. With an additional 50,000 Credits and 100 Tech on top, grab yours today and get ready to jump into battle!\r\n\r\nThe <b>AMD Bonus Pack</b> includes:\r\n<ul>\r\n<li><b>Agent Skin (Kent): Phantom Protocol</b></li>\r\n<li><b>Vehicle Skin (XM1 90): Flashpoint</b></li>\r\n<li><b>50,000 Credits</b></li>\r\n<li><b>100 Tech</b></li>\r\n</ul>",
-            "createdAt": 1779810048,
-            "deleted": false,
-            "developer": "Wargaming",
-            "featured": false,
-            "gameWebsiteUrl": "https://wotheat.com/",
-            "id": "3036559b-1072-495d-b0e3-8f58eb5e95e7",
-            "keysAvailable": 0,
-            "maxKeysPerIp": 2,
-            "platform": "Steam",
-            "redemptionInstructions": "<ol>\r\n<li>Copy your key from this page, or find it again in<a href=\"https://www.amdgaming.com/rewards\"> My Loot.</a></li>\r\n<li>Open a web browser and go to the <a href=\"https://wargaming.net/shop/redeem/\">Wargaming Redemption Page</a></li>\r\n<li>Enter your bonus code in the provided field and click <b>Redeem</b>.</li>\r\n<li>The reward will be credited to your account automatically!</li>\r\n<li>GGs and happy gaming!</li>\r\n</ol>",
-            "requireConnectedAccount": false,
-            "slug": "world-of-tanks-heat-giveaway",
-            "status": "active",
-            "tags": "military sim,hero shooter,tanks",
-            "thumbnailImageUrl": "https://d178rirzmwqq72.cloudfront.net/85264286-9002-443a-9342-bddc3c2af369/giveaway_uploads/20260526/thumbnail-144a3b69-c4a8-464e-90e4-47fa358c6bf9.jpg",
-            "title": "World of Tanks: Heat Giveaway",
-            "updatedAt": 1782927753,
-            "youtubeUrl": "https://www.youtube.com/watch?v=XUc5GNpvDKY"
         }
     ]
 }
