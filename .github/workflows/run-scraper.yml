@@ -35,7 +35,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.4.0
 
       - name: Install dependencies
         run: uv sync --all-groups
@@ -45,12 +45,12 @@ jobs:
           sleep 15
           uv run python main.py
 
-      - uses: j178/prek-action@v3
+      - uses: j178/prek-action@v3.1.1
         continue-on-error: true
         with:
           extra-args: "--all-files"
 
-      - uses: j178/prek-action@v3
+      - uses: j178/prek-action@v3.1.1
         with:
           extra-args: "--all-files"
 
