@@ -4,7 +4,7 @@
 Automated RSS feed generation system designed to run scheduled scrapers via GitHub Workflows, transform HTML into structured feed data, and publish RSS files.
 
 ## Technology Stack
-- **Python**: 3.14+ (specified in `.python-version`)
+- **Python**: 3.15+ (specified in `.python-version`)
 - **Package Manager**: `uv` (fast Python package installer, replaces pip/poetry)
 - **Dependencies**: curl-cffi (HTTP requests), loguru (logging), pydantic (data validation)
 - **Linter/Formatter**: Ruff with preview features enabled

@@ -6,7 +6,7 @@ Requirements:
 Usage:
     python amd/visualize_keys.py
 """
-# ruff: noqa: T201
+# ruff: file-ignore[print]
 
 import csv
 from datetime import datetime

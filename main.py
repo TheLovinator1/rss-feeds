@@ -103,7 +103,7 @@ def build_amd_promotion_description(item: FeedItem) -> str:
     return "".join(description_parts)
 
 
-def main() -> None:  # noqa: PLR0914
+def main() -> None:  # ruff: ignore[too-many-locals]
     """Fetch promotions and generate RSS feeds, with restock detection for dev feed."""
     logger.info("Starting RSS feed generation (with restock detection)")
 

@@ -47,7 +47,7 @@ def test_no_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     write_state({"promotions": {"test1": 0, "test2": 0}})
 
     class DummyScraper:
-        def fetch_promotions(self, *, save_response: bool = True) -> PromotionsResponse:  # noqa: ARG002
+        def fetch_promotions(self, *, save_response: bool = True) -> PromotionsResponse:  # ruff: ignore[unused-method-argument]
             return PromotionsResponse(
                 items=[
                     PromotionItem(
@@ -98,15 +98,15 @@ def test_no_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr("main.AMDGamingScraper", DummyScraper)
 
     class DummyDownloader:
-        def download_image(self, *args: object, **kwargs: object) -> None:  # noqa: ARG002
+        def download_image(self, *args: object, **kwargs: object) -> None:  # ruff: ignore[unused-method-argument]
             return None
 
-        def get_github_pages_url(self, *args: object, **kwargs: object) -> None:  # noqa: ARG002
+        def get_github_pages_url(self, *args: object, **kwargs: object) -> None:  # ruff: ignore[unused-method-argument]
             return None
 
     monkeypatch.setattr("main.ImageDownloader", DummyDownloader)
-    monkeypatch.setattr("main.append_keys_data_to_csv", lambda *a, **kw: None)  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # noqa: ARG005
-    monkeypatch.setattr("main.RSSFeedGenerator", lambda *a, **kw: type("G", (), {"generate_feed": lambda s, c, d, t: "<rss></rss>"})())  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # noqa: ARG005
+    monkeypatch.setattr("main.append_keys_data_to_csv", lambda *a, **kw: None)  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # ruff: ignore[unused-lambda-argument]
+    monkeypatch.setattr("main.RSSFeedGenerator", lambda *a, **kw: type("G", (), {"generate_feed": lambda s, c, d, t: "<rss></rss>"})())  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # ruff: ignore[unused-lambda-argument]
     run_main()
     dev_feed = Path("pages/amd_gaming_promotions_dev.xml")
     assert not dev_feed.exists() or not dev_feed.read_text(encoding="utf-8")
@@ -117,7 +117,7 @@ def test_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     write_state({"promotions": {"test1": 0, "test2": 0}})
 
     class DummyScraper:
-        def fetch_promotions(self, *, save_response: bool = True) -> PromotionsResponse:  # noqa: ARG002
+        def fetch_promotions(self, *, save_response: bool = True) -> PromotionsResponse:  # ruff: ignore[unused-method-argument]
             return PromotionsResponse(
                 items=[
                     PromotionItem(
@@ -168,15 +168,15 @@ def test_restock(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr("main.AMDGamingScraper", DummyScraper)
 
     class DummyDownloader:
-        def download_image(self, *args: object, **kwargs: object) -> None:  # noqa: ARG002
+        def download_image(self, *args: object, **kwargs: object) -> None:  # ruff: ignore[unused-method-argument]
             return None
 
-        def get_github_pages_url(self, *args: object, **kwargs: object) -> None:  # noqa: ARG002
+        def get_github_pages_url(self, *args: object, **kwargs: object) -> None:  # ruff: ignore[unused-method-argument]
             return None
 
     monkeypatch.setattr("main.ImageDownloader", DummyDownloader)
-    monkeypatch.setattr("main.append_keys_data_to_csv", lambda *a, **kw: None)  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # noqa: ARG005
-    monkeypatch.setattr("main.RSSFeedGenerator", lambda *a, **kw: type("G", (), {"generate_feed": lambda s, c, d, t: "<rss>restocked</rss>"})())  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # noqa: ARG005
+    monkeypatch.setattr("main.append_keys_data_to_csv", lambda *a, **kw: None)  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # ruff: ignore[unused-lambda-argument]
+    monkeypatch.setattr("main.RSSFeedGenerator", lambda *a, **kw: type("G", (), {"generate_feed": lambda s, c, d, t: "<rss>restocked</rss>"})())  # pyright: ignore[reportUnknownLambdaType, reportUnknownArgumentType] # ruff: ignore[unused-lambda-argument]
     run_main()
     dev_feed = Path("pages/amd_gaming_promotions_dev.xml")
     assert dev_feed.exists()

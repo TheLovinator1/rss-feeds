@@ -18,7 +18,7 @@ from __future__ import annotations
 import csv
 import json
 import shutil
-import subprocess  # noqa: S404 - controlled git CLI usage
+import subprocess  # ruff: ignore[suspicious-subprocess-import] - controlled git CLI usage
 from dataclasses import dataclass
 from datetime import UTC
 from datetime import datetime
@@ -70,7 +70,7 @@ def run_git_command(args: list[str]) -> subprocess.CompletedProcess[str]:
         msg = "git executable not found on PATH"
         raise RuntimeError(msg)
 
-    return subprocess.run(  # noqa: S603 - arguments are static and executable is resolved
+    return subprocess.run(  # ruff: ignore[subprocess-without-shell-equals-true] - arguments are static and executable is resolved
         [git_exe, *args],
         cwd=REPO_ROOT,
         text=True,

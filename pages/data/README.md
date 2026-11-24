@@ -65,26 +65,21 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv('pages/data/amd_gaming_keys_available.csv')
-df['timestamp'] = pd.to_datetime(df['timestamp'])
+df = pd.read_csv("pages/data/amd_gaming_keys_available.csv")
+df["timestamp"] = pd.to_datetime(df["timestamp"])
 
 # Plot for each promotion
-for promo_id in df['promotion_id'].unique():
-    promo_data = df[df['promotion_id'] == promo_id]
-    plt.plot(
-        promo_data['timestamp'],
-        promo_data['keys_available'],
-        marker='o',
-        label=promo_data['title'].iloc[0]
-    )
+for promo_id in df["promotion_id"].unique():
+    promo_data = df[df["promotion_id"] == promo_id]
+    plt.plot(promo_data["timestamp"], promo_data["keys_available"], marker="o", label=promo_data["title"].iloc[0])
 
-plt.xlabel('Date')
-plt.ylabel('Keys Available')
-plt.title('AMD Gaming Promotions - Key Availability Over Time')
+plt.xlabel("Date")
+plt.ylabel("Keys Available")
+plt.title("AMD Gaming Promotions - Key Availability Over Time")
 plt.legend()
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig('keys_availability.png')
+plt.savefig("keys_availability.png")
 plt.show()
 ```
 

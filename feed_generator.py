@@ -34,7 +34,7 @@ from typing import TYPE_CHECKING
 from typing import LiteralString
 from typing import Protocol
 from typing import runtime_checkable
-from xml.etree import ElementTree as ET  # noqa: S405
+from xml.etree import ElementTree as ET  # ruff: ignore[suspicious-xml-etree-import]
 
 if TYPE_CHECKING:
     from collections.abc import Callable
